@@ -21,9 +21,9 @@ def write_results_to_file(results, output_file):
             f.write(f"Domain: {domain}\n")
             if certs:
                 for cert in certs:
-                    f.write(f"  - {cert}\n")
+                    f.write(f"{cert}\n")
             else:
-                f.write("  - No certificates found.\n")
+                f.write("No certificates found.\n")
             f.write("\n")
 
 if __name__ == "__main__":
